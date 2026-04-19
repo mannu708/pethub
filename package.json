@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "PetCare Hub - Full Stack Application",
   "scripts": {
-    "postinstall": "npm run install:all",
-    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "postinstall": "cd frontend && npm install && cd ../backend && npm install",
+    "install:all": "npm install",
     "build": "cd frontend && npm run build",
     "dev:frontend": "cd frontend && npm run dev",
     "dev:backend": "cd backend && npm run dev",
