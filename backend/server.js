@@ -59,11 +59,6 @@ if (process.env.MONGODB_URI) {
   console.log('CRITICAL: MONGODB_URI is undefined!');
 }
 
-// Export app for serverless platforms
-if (process.env.NODE_ENV !== 'production') {
-  app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-  });
-}
-
-export default app;
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});

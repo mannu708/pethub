@@ -23,6 +23,11 @@ export const getAllPets = async (req, res) => {
       query = query.sort('-createdAt');
     }
 
+    if (req.query.limit) {
+      const limit = req.query.limit * 1;
+      query = query.limit(limit);
+    }
+
     const pets = await query;
 
     res.status(200).json({

@@ -15,6 +15,11 @@ export const getAllProducts = async (req, res) => {
       query = query.sort('-createdAt');
     }
 
+    if (req.query.limit) {
+      const limit = req.query.limit * 1;
+      query = query.limit(limit);
+    }
+
     const products = await query;
 
     res.status(200).json({

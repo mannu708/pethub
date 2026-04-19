@@ -38,28 +38,24 @@ export function About() {
 
   const team = [
     {
-      name: "Sarah Johnson",
+      name: "Aanya Patel",
       role: "Founder & CEO",
-      image:
-        "https://images.unsplash.com/photo-1591911949558-2b0b620d545a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHBldHMlMjBmYW1pbHl8ZW58MXx8fHwxNzc1NjM4OTM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "/team/indian_female_ceo.png",
     },
     {
-      name: "Michael Chen",
+      name: "Rohan Sharma",
       role: "Head of Operations",
-      image:
-        "https://images.unsplash.com/photo-1591911949558-2b0b620d545a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHBldHMlMjBmYW1pbHl8ZW58MXx8fHwxNzc1NjM4OTM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "/team/indian_male_operations.png",
     },
     {
-      name: "Emily Rodriguez",
+      name: "Priya Desai",
       role: "Chief Veterinarian",
-      image:
-        "https://images.unsplash.com/photo-1591911949558-2b0b620d545a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHBldHMlMjBmYW1pbHl8ZW58MXx8fHwxNzc1NjM4OTM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "/team/indian_female_vet.png",
     },
     {
-      name: "David Kim",
+      name: "Vikram Singh",
       role: "Customer Success Lead",
-      image:
-        "https://images.unsplash.com/photo-1591911949558-2b0b620d545a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMHBldHMlMjBmYW1pbHl8ZW58MXx8fHwxNzc1NjM4OTM0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      image: "/team/indian_male_success.png",
     },
   ];
 
