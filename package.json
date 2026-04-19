@@ -2,6 +2,7 @@
   "name": "pet-care-hub",
   "version": "1.0.0",
   "description": "PetCare Hub - Full Stack Application",
+  "type": "module",
   "scripts": {
     "postinstall": "npm --prefix frontend install && npm --prefix backend install",
     "install:all": "npm install",

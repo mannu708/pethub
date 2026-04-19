@@ -51,9 +51,13 @@ app.use((err, req, res, next) => {
 });
 
 // Database connection
-mongoose.connect(process.env.MONGODB_URI)
-  .then(() => console.log('Connected to MongoDB'))
-  .catch((err) => console.log('MongoDB connection error:', err));
+if (process.env.MONGODB_URI) {
+  mongoose.connect(process.env.MONGODB_URI)
+    .then(() => console.log('Connected to MongoDB'))
+    .catch((err) => console.log('MongoDB connection error:', err));
+} else {
+  console.log('CRITICAL: MONGODB_URI is undefined!');
+}
 
 // Export app for serverless platforms
 if (process.env.NODE_ENV !== 'production') {
